@@ -1,8 +1,17 @@
+html{
+    box-sizing: border-box;
+}
+*, *:before, *::after{
+    box-sizing: inherit;
+}
 img{
     width: 300px;
 }
 body{
     color: #343434;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 a{
     color: #ffe66d;
@@ -10,17 +19,40 @@ a{
 a:hover{
     text-decoration: none;
 }
+h2{
+    margin: 0;
+    
+}
+.content-wrap{
+    width: 900px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
 
 header{
     background: #2f3061;
     color: #f7fff7;
 }
+header h1{
+    text-shadow: 5px 5px #343434;
+}
 
 .projects{
     background: #f7fff7;
+    overflow: hidden;
+    border: 1px dashed #343434;
+    padding: 25px;
+    
+}
+.projects img{
+    float: left;
+    margin-right: 20px
 }
 .projects a{
     color: #2f3061;
+}
+.projects h3{
+    margin-top: 0;
 }
 .projects .btn{
     color: #f7fff7;
@@ -28,6 +60,7 @@ header{
     text-decoration: none;
     padding: 8px;
     border-radius: 4px;
+    display: inline-block;
 }
 .projects .btn:hover{
     background: rgb(47, 48, 97, 80%);
